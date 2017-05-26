@@ -8,5 +8,6 @@ namespace DataService.Notes
 {
     public interface INoteDataService
     {
+
     }
 }

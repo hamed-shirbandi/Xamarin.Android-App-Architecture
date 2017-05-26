@@ -35,10 +35,11 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <Folder Include="Synchronization\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Synchronization\ISyncApiService.cs" />
+    <Compile Include="Synchronization\SyncApiService.cs" />
     <Compile Include="UserManagement\IRegistrationApiService.cs" />
     <Compile Include="UserManagement\RegistrationApiService.cs" />
   </ItemGroup>
@@ -46,6 +47,10 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{97f701eb-03c9-4bb4-9c84-a53d83a0c54e}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataService\DataService.csproj">
+      <Project>{78241dfb-cd47-4bdd-ad0b-2439bc3b57be}</Project>
+      <Name>DataService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
